@@ -11,7 +11,7 @@ def creating(count)
     
     count = count.to_i  
 
-    pockemons = []
+    pockemons = {}
 
     i = 0
 
@@ -23,17 +23,20 @@ def creating(count)
         puts "Введите цвет покемона: "
         color = gets.chomp
 
-        pockemons[i] = {name => color}
+        pockemons[name] = color
 
         i += 1
         count -=1
     end
+
+    
 
     print(pockemons)
 
 end
 
 def print(pockemons)
+
     puts pockemons
 
 end
